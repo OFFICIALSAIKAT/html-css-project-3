@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8bc5c06ed1.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+<header id="color">
+    <nav>
+        
+        <img src="./assets/white-logo.png" alt="">
+       
+            <div class="navigation">
+                <ul>
+                    <i id="menu-close" class="fa-solid fa-circle-xmark"></i>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Terms and Conditions</a></li>
+                  <li><button class="button">Get Started</button></li>
+                </ul>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png" alt="" class="menu-btn">
+            </div>
+    </nav>
+
+    <!-- Home -->
+
+    <section id="home">
+        <h2>Your justice is our top priority.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, est. Sint beatae, cupiditate sed reprehenderit aliquam aperiam cumque deserunt distinctio?</p>
+    </section>
+
+</header>
+<section class="image">
+  <img src="https://media.smallbiztrends.com/2022/02/free-legal-advice.png" alt="">
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    $('.menu-btn').click(function(){
+      $('nav .navigation ul').addClass('active')
+    });
+
+    $('#menu-close').click(function(){
+      $('nav .navigation ul').removeClass('active')
+    });
+  </script>
+
+</body>
+</html>
